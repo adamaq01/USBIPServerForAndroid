@@ -13,6 +13,6 @@ build_script:
   - gradlew.bat build connectedCheck
 
 after_build:
-  - 'appveyor PushArtifact app\build\reports\lint-results-debug.html'
+  - 'appveyor PushArtifact app\build'
 
 deploy: off
